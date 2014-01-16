@@ -1,0 +1,27 @@
+
+.ui-widget {
+    font-size : 0.8em;
+}
+
+input {
+    background: none;
+    border : none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 94%;
+    margin: 5px 3% 5px 3%;
+}
+
+thead {
+    background-color : #eee;
+}
+
+th {
+    text-align: left;
+    cursor : pointer;
+    border-bottom : 1px solid black;
+    padding: 5px 0 5px 0;
+}

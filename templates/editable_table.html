@@ -1,0 +1,27 @@
+
+<div class="rel-holder">
+  <br>
+  <div class="absolute top right">
+    <span> Filter: </span>
+    <select data-field="__filter__">
+      <option>all</option>
+      <% _.each(filters, function(_, f) { %>
+        <option><%= f %></option>
+      <% }); %>
+    </select>
+  </div>
+</div>
+<div>
+  <table>
+    <thead>
+      <th style="padding-right: 10px;">
+	<input type="checkbox" data-field="__selectall__">
+      </th>
+      <% _.each(field_order, function(f) { %>
+        <th><%= f %></th>
+      <% }); %>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>

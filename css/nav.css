@@ -1,0 +1,45 @@
+
+ul.nav.left {
+    list-style: none;
+    position: absolute;
+    width: 150px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #cec;
+    margin: 0;
+    padding: 0;
+}
+
+.nav.left > li {
+    height: 60px;
+    line-height: 60px;
+    width: 130px;
+    padding: 0 10px 0 10px;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-align: right;
+}
+
+.nav.left > li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav.left > li.active > a {
+    color: #8c8;
+}
+
+.nav.nav-content.right {
+    position: absolute;
+    left: 150px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.nav.nav-content > .nav-pane {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}

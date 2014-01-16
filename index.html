@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/underscore.min.js"></script>
+    <script type="text/javascript" src="./js/mixins.js"></script>
+    <script type="text/javascript" src="./js/editable_table.js"></script>
+    <script type="text/javascript" src="./js/template_loader.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-timepicker-addon.min.js"></script>
+    <script type="text/javascript" src="./js/experiment_monitor.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery.ui.base.css">
+    <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"> -->
+    <link rel="stylesheet" href="./css/jquery-ui-timepicker-addon.min.css">
+    <link rel="stylesheet" href="./css/editable_table.css">
+    <link rel="stylesheet" href="./css/experiment_monitor.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/position.css">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="rel-holder">
+      <ul class="nav left">
+	<li> <a href="#subjects">SUBJECTS</a> </li>
+	<li> <a href="#sessions">SESSIONS</a> </li>
+	<li> <a href="#errors">ERRORS</a> </li>
+	<li> <a href="#logs">LOGS</a> </li>
+      </ul>
+      <div class="nav nav-content right">
+	<div class="nav-pane" id="subjects">
+	  <div id="subjects-table"></div>
+	  <div class="absolute bottom footer">
+	    <div class="spacing third"><button> Delete </button></div>
+	    <div class="spacing third"><button> Download </button></div>
+	    <div class="spacing third"><button> Upload </button></div>
+	  </div>
+	</div>
+	<div class="nav-pane" id="sessions">
+	  <div id="sessions-table"></div>
+	  <div class="absolute bottom footer">
+	    <div class="spacing seventh"><button> Activate </button></div>
+	    <div class="spacing seventh"><button> Deactivate </button></div>
+	    <div class="spacing seventh"><button> Reset </button></div>
+	    <div class="spacing seventh"><button> Delete </button></div>
+	    <div class="spacing seventh"><button> Download </button></div>
+	    <div class="spacing seventh"><button> Upload </button></div>
+	    <div class="spacing seventh"><button> Stop </button></div>
+	  </div>
+	</div>
+	<div class="nav-pane" id="errors">
+	  <div id="errors-table"></div>
+	</div>
+	<div class="nav-pane" id="logs">
+	  <div id="logs-table"></div>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>
